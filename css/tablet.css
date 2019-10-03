@@ -1,0 +1,275 @@
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+p {
+  color: #333;
+}
+
+body {
+  font-family: Lato;
+}
+
+h1 {
+  font-family: Raleway;
+}
+.inner {
+  margin: 0 auto;
+  width: 97%;
+}
+
+/* ここからheader */
+
+.header {
+  background-color: #fff;
+  padding: 15px auto;
+  position: fixed;
+  top: 0px; /* 位置(上0px) */
+  left: 0px; /* 位置(右0px) */
+  width: 100%; /* 横幅100%　*/
+}
+.header-inner {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header_icon i {
+  color: #4e4e4e;
+  padding-left: 200px;
+}
+
+.contact {
+  background-color: #74cfae;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  margin-right: 100px;
+  padding: 14px 12px;
+  cursor: pointer;
+}
+
+.contact:hover {
+  color: #333;
+  transition: all 0.5s;
+}
+
+/* ここまでheader */
+/* ここからtheme */
+
+.background {
+  min-width: 97%;
+}
+
+.theme {
+  background-color: #f2f2f2;
+  min-width: 97%;
+}
+
+.theme-inner {
+  padding-top: 90px;
+  padding-bottom: 250px;
+}
+.theme_head {
+  color: #74cfae;
+  font-weight: 700;
+  font-size: 90px;
+  padding-bottom: 20px;
+  padding-top: 250px;
+  text-align: center;
+}
+
+.theme_text {
+  color: #c0c0c0;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* ここまでtheme */
+/* ここからable_to */
+
+.able_to {
+  background-color: #74cfae;
+  min-width: 97%;
+  text-align: center;
+}
+
+.able_to-inner {
+  text-align: center;
+}
+
+.pic_iphone {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.able_to_head {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.able_to_text {
+  color: #fff;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 25px;
+}
+
+/* ここまでable_to */
+/* ここからOUR latest WORK HEAD */
+
+.latest_head {
+  background-color: #f2f2f2;
+  min-width: 97%;
+}
+
+.latest_head-inner {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.latest_head {
+  color: #333;
+  font-size: 24px;
+}
+/* ここまでOUR latest WORK HEAD */
+/* ここからOUR latest WORK IMG */
+
+.flex_img {
+  background-color: #f2f2f2;
+  min-width: 97%;
+  text-align: center;
+}
+
+.six_image {
+  display: block;
+  opacity: 0.7;
+}
+.six_image img {
+  vertical-align: bottom;
+}
+.six_image:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.flex_img_inner > a:nth-child(3n) {
+  padding-bottom: 80px;
+}
+
+/* ここまでOUR latest WORK IMG */
+/* ここからOUR latest WORK TEXT */
+
+.latest_work_text {
+  background-color: #f2f2f2;
+  min-width: 97%;
+  text-align: center;
+}
+
+.latest_text_inner {
+  padding-bottom: 70px;
+}
+
+.latest_text {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.email {
+  display: inline-block;
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 20px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.email:hover {
+  color: #333;
+  transition: all 0.5s;
+}
+
+/* ここまでOUR latest WORK TEXT */
+/* ここからskill head */
+
+.skill_head {
+  background-color: #4e4e4e;
+  min-width: 97%;
+}
+
+.skill_head_inner {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.skill_head_text {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* ここまでskill head */
+/* ここからskill */
+
+.skill_inner {
+  text-align: center;
+}
+
+.skill_detail {
+  font-size: 16px;
+  color: #fff;
+}
+
+.skill_inner > div {
+  padding-bottom: 80px;
+}
+
+/* ここまでskill */
+/* ここからsns */
+
+.sns {
+  background-color: #f2f2f2;
+  min-width: 97%;
+}
+
+.sns_inner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.sns_icon i {
+  color: #74cfae;
+  width: 185px;
+  transition: all 0.3s;
+  padding: 25px 0;
+}
+
+.sns_icon i:hover {
+  background-color: #fff;
+}
+
+/* ここまでsns */
+/* ここからfooter */
+
+.footer {
+  background-color: #74cfae;
+  min-width: 97%;
+}
+
+.footer-inner {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-align: right;
+}
+
+.copyright {
+  color: #fff;
+}
+
+/* ここまでfooter */
