@@ -12,10 +12,6 @@ body {
   font-family: Lato;
 }
 
-h1 {
-  font-family: Raleway;
-}
-
 @media screen and (min-width: 1200px) {
   .inner {
     margin: 0 auto;
@@ -30,23 +26,10 @@ h1 {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .min_width {
-    min-width: 1100px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .min_width {
-    min-width: 100%;
-  }
-}
-
 /* ここからheader */
 
 .header {
   background-color: #fff;
-  padding: 15px auto;
   position: fixed;
   top: 0px;
   /* 位置(上0px) */
@@ -57,65 +40,62 @@ h1 {
 }
 
 .header-inner {
-  position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .header_icon {
-  margin-left:15%;
+  float: left;
 }
 
 .header_icon i {
   color: #4e4e4e;
 }
 
-.sp_menu{
+.sp_menu {
   position: absolute;
-  right:-100%;
+  right: -100%;
   cursor: pointer;
 }
 
-.sp_menu:active{
-  
-}
-
-@media screen and (min-width: 768px) {
-.contact{
-  position: absolute;
-  right: 15%;
-}
-
-}
-
-@media screen and (max-width: 767px) {
-  .contact {
-    position: absolute;
-    right: -100%;
-  }
-  .sp_menu {
-    position:absolute;
-    right: 15%;
-  }
-}
-
 .contact {
+  float: right;
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
   cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+  }
 }
 
 @media screen and (max-width: 767px) {
   .contact {
-    color: #4e4e4e;
+  }
+
+  .sp_menu {
+  }
+}
+.sp_menu i {
+  color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
   }
 }
 
 .contact:hover {
   color: #333;
-  transition: all 0.5s;
 }
 
 /* ここまでheader */
@@ -124,10 +104,11 @@ h1 {
 
 .theme {
   background-color: #f2f2f2;
+  padding-top: 80px;
 }
 
 .theme-inner {
-  padding-top: 90px;
+  padding-top: 250px;
   padding-bottom: 250px;
 }
 
@@ -135,8 +116,7 @@ h1 {
   color: #74cfae;
   font-weight: 700;
   font-size: 90px;
-  padding-bottom: 20px;
-  padding-top: 250px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -169,6 +149,7 @@ h1 {
 
 @media screen and (min-width: 1200px) {
   .able_to-inner {
+    display: table;
     padding-top: 50px;
     height: 295px;
   }
@@ -176,14 +157,19 @@ h1 {
 
 @media screen and (max-width: 1199px) {
   .able_to-inner {
-    text-align: center;
     padding-top: 50px;
     padding-bottom: 25px;
   }
 }
 @media screen and (min-width: 1200px) {
   .pic_iphone {
-    float: left;
+    display: table-cell;
+  }
+  .able_text_wrap {
+    display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -199,7 +185,6 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   .able_to_head {
-    margin-left: 20%;
     text-align: center;
   }
 }
@@ -211,9 +196,7 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   .able_to_text {
-    margin-left: 30%;
     text-align: center;
-    width: 60%;
   }
 }
 
@@ -234,13 +217,16 @@ h1 {
 }
 
 .latest_head {
+  text-align: center;
+}
+.latest_head_text {
   color: #333;
   font-size: 24px;
 }
 /* ここまでOUR latest WORK HEAD */
 /* ここからOUR latest WORK IMG */
 
-.flex_img {
+.article {
   background-color: #f2f2f2;
 }
 
@@ -257,6 +243,8 @@ h1 {
 }
 .six_image {
   opacity: 0.7;
+  transition: all 0.3s;
+  width:300px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -275,25 +263,20 @@ h1 {
 
 .six_image:hover {
   opacity: 1;
-  transition: all 0.3s;
 }
 
 @media screen and (min-width: 1200px) {
-  .flex_img_inner > a:nth-child(3n-1) {
+  .flex_img_inner a {
     margin-left: 100px;
-    margin-right: 100px;
+    }
+  .flex_img_inner a:nth-child(3n+1){
+    margin-left:0;
   }
 
   .flex_img_inner a {
     margin-bottom: 80px;
   }
-  .flex_img_inner > a:last-child {
-    margin-bottom: 0;
-  }
-  .flex_img_inner > a:nth-last-child(2) {
-    margin-bottom: 0;
-  }
-  .flex_img_inner > a:nth-last-child(3) {
+  .flex_img_inner > a:nth-last-of-type(-n+3) {
     margin-bottom: 0;
   }
 }
@@ -314,9 +297,6 @@ h1 {
 /* ここまでOUR latest WORK IMG */
 /* ここからOUR latest WORK TEXT */
 
-.latest_work_text {
-  background-color: #f2f2f2;
-}
 
 .latest_text_inner {
   padding-top: 80px;
@@ -336,11 +316,15 @@ h1 {
   }
 }
 .email {
+  float:left;
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   padding: 14px 20px;
   cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 90px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1199px) {
@@ -359,13 +343,12 @@ h1 {
 
 .email:hover {
   color: #333;
-  transition: all 0.5s;
 }
 
 /* ここまでOUR latest WORK TEXT */
 /* ここからskill head */
 
-.skill_head {
+.skill {
   background-color: #4e4e4e;
 }
 
@@ -436,7 +419,13 @@ h1 {
 }
 .sns_icon {
   text-decoration: none;
+  display:inline-block;
+  transition: all 0.3s;  
 }
+
+    .sns_icon:hover {
+      background-color: #fff;
+    }
 .sns_icon i {
   color: #74cfae;
   width: 185px;
@@ -457,9 +446,6 @@ h1 {
   }
 }
 
-.sns_icon i:hover {
-  background-color: #fff;
-}
 
 /* ここまでsns */
 /* ここからfooter */
