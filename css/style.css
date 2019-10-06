@@ -53,9 +53,7 @@ body {
 }
 
 .sp_menu {
-  position: absolute;
-  right: -100%;
-  cursor: pointer;
+visibility: hidden
 }
 
 .contact {
@@ -70,29 +68,26 @@ body {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .contact {
+    display: none;
+  }
+
+  .sp_menu{
+    visibility: visible;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .contact {
-  }
-
-  .sp_menu {
-  }
-}
-.sp_menu i {
-  color: #f2f2f2;
+.sp_menu {
+  float: right;
+  color: #ddd;
+  cursor: pointer;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
-  .contact {
-  }
-}
+
 
 .contact:hover {
   color: #333;
@@ -245,6 +240,7 @@ body {
   opacity: 0.7;
   transition: all 0.3s;
   width:300px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -316,14 +312,13 @@ body {
   }
 }
 .email {
-  float:left;
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   padding: 14px 20px;
   cursor: pointer;
   transition: all 0.3s;
-  margin-left: 90px;
+
   text-decoration: none;
 }
 
@@ -332,6 +327,13 @@ body {
     display: inline-block;
     margin-top: 40px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .email {
+    float: left;
+    margin-left: 90px;
+      }
 }
 
 @media screen and (min-width: 1200px) {
@@ -415,6 +417,7 @@ body {
 @media screen and (max-width: 767px) {
   .sns_inner {
     padding-top: 0;
+    padding-bottom: 50px;
   }
 }
 .sns_icon {
@@ -426,7 +429,7 @@ body {
     .sns_icon:hover {
       background-color: #fff;
     }
-.sns_icon i {
+.sns_icon {
   color: #74cfae;
   width: 185px;
   transition: all 0.3s;
@@ -435,7 +438,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .sns_icon i {
+  .sns_icon {
     padding-top: 50px;
     margin-left: 15px;
     margin-right: 15px;
