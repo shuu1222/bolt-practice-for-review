@@ -338,9 +338,6 @@ body {
   .skill_head_inner {
     padding: 70px 0 100px;
   }
-  .sns_icon{
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -404,7 +401,7 @@ body {
   }
   .sns_icon {
 
-    width: 180px;
+    width: 25%;
    
   }
 }
