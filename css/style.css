@@ -235,6 +235,10 @@ body {
 }
 
 .sns_icon {
+  color: #74cfae;
+  width: 185px;
+  padding: 25px 0;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s;
@@ -242,13 +246,6 @@ body {
 
 .sns_icon:hover {
   background-color: #fff;
-}
-.sns_icon {
-  color: #74cfae;
-  width: 185px;
-  transition: all 0.3s;
-  padding: 25px 0;
-  text-align: center;
 }
 
 /* ここまでsns */
