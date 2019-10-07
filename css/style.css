@@ -232,6 +232,7 @@ body {
 .sns_inner {
   padding: 200px 0;
   text-align: center;
+  font-size: 0;
 }
 
 .sns_icon {
@@ -242,6 +243,7 @@ body {
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s;
+  font-size: 20px;
 }
 
 .sns_icon:hover {
@@ -336,6 +338,9 @@ body {
   .skill_head_inner {
     padding: 70px 0 100px;
   }
+  .sns_icon{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -425,8 +430,7 @@ body {
   }
   .sns_icon {
     display: block;
-    width: 90%;
-    margin: 0 15px;
+    width: 100%;
     
   }
 }
