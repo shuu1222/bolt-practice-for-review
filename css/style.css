@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-  padding-top: 84px;
+  padding-top: 78px;
 }
 
 .h_font {
@@ -124,8 +124,7 @@ body {
 /* ここからOUR latest WORK HEAD */
 
 .article {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding:60px 0 70px;
 }
 
 .latest_head-inner {
@@ -154,6 +153,9 @@ body {
   width: 300px;
 }
 
+.work_image img{
+  vertical-align: bottom;
+}
 .work_image:hover {
   opacity: 1;
 }
@@ -208,6 +210,7 @@ body {
 
 .skill_inner {
   text-align: center;
+  font-size:0;
 }
 
 .skill_detail {
@@ -349,12 +352,16 @@ body {
   }
 
   .able_to-inner {
-    padding-top: 50px;
-    padding-bottom: 25px;
+    padding:50px 0 25px;
   }
 
   .pic_iphone {
     margin-bottom: 20px;
+  }
+
+  .able_to_text{
+    margin: 0 auto;
+    width:100%;
   }
 
   .latest_head {
@@ -364,16 +371,14 @@ body {
   .work_image {
     display: block;
     margin: 0 auto;
-  }
-  .work_image {
     vertical-align: bottom;
   }
 
-  .work_image:nth-child(3n + 1) {
+  .work_image:nth-child(3n + 4) {
     margin-top: 80px;
   }
   .work_image:last-child {
-    margin-bottom: 0;
+    margin-bottom: 80px;
   }
 
   .work_image {
